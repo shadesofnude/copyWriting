@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ivy's professional copywriting portfolio. Conversion-focused copy for landing pages, emails, ads, product descriptions, and long-form content. Explore samples and process.">
+<meta name="keywords" content="copywriting, conversion copy, marketing copy, email copywriting, landing page copy, product copy, freelance copywriter">
+<meta property="og:title" content="Ivy — Professional Copywriting Portfolio">
+<meta property="og:description" content="Discover conversion-focused copywriting samples across 7 formats: landing pages, emails, ads, product copy, articles, and more.">
+<meta property="og:type" content="website">
+<title>Ivy — Copywriting Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f0e0c;
+    --cream: #f5f0e8;
+    --warm: #e8dfd0;
+    --accent: #c4522a;
+    --accent2: #2a4c6e;
+    --muted: #7a7060;
+    --gold: #b8943f;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 20% 50%, rgba(196,82,42,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(42,76,110,0.07) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px 80px 80px;
+    position: relative;
+  }
+
+  .hero-left::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 10%; bottom: 10%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--muted), transparent);
+  }
+
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .badge::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .hero-name {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(52px, 6vw, 88px);
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    margin-bottom: 28px;
+  }
+
+  .hero-name span {
+    display: block;
+    color: var(--accent);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.75em;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-desc {
+    font-size: 19px;
+    color: var(--muted);
+    font-style: italic;
+    max-width: 380px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+  }
+
+  .hero-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero-nav a {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.2s, gap 0.2s;
+    padding: 6px 0;
+  }
+  .hero-nav a .num {
+    color: var(--accent);
+    font-size: 10px;
+  }
+  .hero-nav a:hover { color: var(--accent); gap: 24px; }
+
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 80px 80px 60px;
+    gap: 40px;
+  }
+
+  .stat-block { border-left: 2px solid var(--warm); padding-left: 24px; }
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--accent2);
+  }
+  .stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .disciplines {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--muted);
+    color: var(--muted);
+    border-radius: 2px;
+  }
+
+  /* SECTION FRAMEWORK */
+  section { padding: 100px 80px; }
+  
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--warm);
+    max-width: 200px;
+  }
+
+  /* SAMPLES GRID */
+  #samples { background: var(--ink); color: var(--cream); }
+  #samples .section-label { color: var(--gold); }
+  #samples .section-label::after { background: #2a2820; }
+
+  .samples-intro {
+    font-size: 36px;
+    font-style: italic;
+    color: var(--warm);
+    max-width: 600px;
+    margin-bottom: 80px;
+    line-height: 1.4;
+  }
+
+  .samples-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .sample-card {
+    background: #161410;
+    padding: 48px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 1px solid #2a2820;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sample-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .sample-card:hover { background: #1c1a16; }
+  .sample-card:hover::before { transform: scaleX(1); }
+
+  .card-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .card-hook {
+    font-size: 16px;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .card-cta {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.2s;
+  }
+  .sample-card:hover .card-cta { gap: 14px; }
+
+  /* FULL SAMPLE PIECES */
+  .piece {
+    padding: 100px 80px;
+    border-bottom: 1px solid var(--warm);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .piece.visible { opacity: 1; transform: translateY(0); }
+
+  .piece-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    margin-bottom: 64px;
+    gap: 40px;
+  }
+
+  .piece-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .piece-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .piece-meta {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    line-height: 2;
+  }
+
+  /* PIECE 1: Landing Page */
+  .lp-hero {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 80px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .lp-hero::after {
+    content: 'SAMPLE';
+    position: absolute;
+    bottom: -10px; right: -10px;
+    font-family: 'Syne', sans-serif;
+    font-size: 140px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.03);
+    pointer-events: none;
+    line-height: 1;
+  }
+  .lp-hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .lp-hero-h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 28px;
+    max-width: 700px;
+  }
+  .lp-hero-h1 em { color: var(--gold); font-style: italic; font-family: 'Cormorant Garamond', serif; font-weight: 300; }
+  .lp-hero-sub {
+    font-size: 20px;
+    color: #a09888;
+    max-width: 520px;
+    margin-bottom: 48px;
+    line-height: 1.7;
+  }
+  .lp-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 18px 36px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .lp-btn:hover { background: #a84225; }
+  .lp-proof {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #5a5248;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+  }
+
+  .lp-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .lp-feat {
+    padding: 32px;
+    background: var(--warm);
+    border-top: 3px solid var(--accent2);
+  }
+  .lp-feat-icon { font-size: 28px; margin-bottom: 16px; }
+  .lp-feat h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .lp-feat p { font-size: 15px; color: var(--muted); line-height: 1.65; }
+
+  .lp-testimonial {
+    background: var(--accent2);
+    color: white;
+    padding: 56px 80px;
+    position: relative;
+  }
+  .lp-testimonial::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 200px;
+    color: rgba(255,255,255,0.08);
+    position: absolute;
+    top: -20px; left: 40px;
+    line-height: 1;
+  }
+  .lp-quote { font-size: 22px; font-style: italic; max-width: 640px; margin-bottom: 20px; }
+  .lp-attr { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: rgba(255,255,255,0.6); }
+
+  /* PIECE 2: Email */
+  .email-wrapper {
+    background: white;
+    border: 1px solid #ddd8cc;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .email-header {
+    background: var(--ink);
+    padding: 40px 48px;
+    text-align: center;
+  }
+  .email-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--cream);
+    letter-spacing: 0.05em;
+  }
+  .email-body { padding: 48px; }
+  .email-greeting { font-size: 17px; color: var(--muted); margin-bottom: 12px; }
+  .email-headline {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 24px;
+  }
+  .email-p { font-size: 16px; line-height: 1.75; color: #333; margin-bottom: 18px; }
+  .email-highlight {
+    background: #fff8f0;
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink);
+  }
+  .email-btn-wrap { text-align: center; margin: 36px 0; }
+  .email-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    text-decoration: none;
+  }
+  .email-ps { font-size: 14px; color: var(--muted); font-style: italic; }
+  .email-footer { background: var(--warm); padding: 24px 48px; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.08em; }
+
+  /* PIECE 3: Ad Copy */
+  .ads-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .ad-card {
+    border: 1px solid var(--warm);
+    overflow: hidden;
+  }
+  .ad-top { background: var(--accent2); color: white; padding: 36px 32px; }
+  .ad-top.v2 { background: var(--accent); }
+  .ad-top.v3 { background: var(--ink); }
+  .ad-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; opacity: 0.7; margin-bottom: 12px; }
+  .ad-headline { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; line-height: 1.2; }
+  .ad-body { padding: 28px 32px; }
+  .ad-body p { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 16px; }
+  .ad-cta {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  /* PIECE 4: Product Description */
+  .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .product-img {
+    background: var(--warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 96px;
+    min-height: 400px;
+  }
+  .product-content { padding: 56px; }
+  .product-category { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; }
+  .product-name { font-family: 'Syne', sans-serif; font-size: 34px; font-weight: 800; margin-bottom: 8px; }
+  .product-tagline { font-style: italic; color: var(--accent); font-size: 18px; margin-bottom: 28px; }
+  .product-desc { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 24px; }
+  .product-bullets { list-style: none; margin-bottom: 32px; }
+  .product-bullets li {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--warm);
+    display: flex;
+    gap: 12px;
+  }
+  .product-bullets li::before { content: '→'; color: var(--accent); }
+  .product-price { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 20px; }
+  .product-btn {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    text-decoration: none;
+  }
+
+  /* PIECE 5: Blog / Article */
+  .article-wrap { max-width: 720px; margin: 0 auto; }
+  .article-tag { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; margin-bottom: 20px; }
+  .article-h1 { font-family: 'Syne', sans-serif; font-size: clamp(30px, 3vw, 48px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px; }
+  .article-byline { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--warm); }
+  .article-lede { font-size: 22px; font-style: italic; color: var(--muted); line-height: 1.65; margin-bottom: 36px; }
+  .article-body { font-size: 18px; line-height: 1.85; }
+  .article-body p { margin-bottom: 24px; }
+  .article-body h2 { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 700; margin: 48px 0 20px; }
+  .article-pullquote {
+    border-left: 4px solid var(--accent);
+    padding: 8px 0 8px 32px;
+    margin: 40px 0;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--accent2);
+    line-height: 1.5;
+  }
+
+  /* PROCESS SECTION */
+  #process {
+    background: var(--warm);
+    color: var(--ink);
+  }
+  #process .section-label { color: var(--accent); }
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .process-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .process-label {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .process-desc {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* TESTIMONIALS SECTION */
+  #testimonials {
+    background: var(--ink);
+    color: var(--cream);
+  }
+  #testimonials .section-label { color: var(--gold); }
+  #testimonials .section-label::after { background: #2a2820; }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .testimonial-card {
+    background: #161410;
+    padding: 48px;
+    border: 1px solid #2a2820;
+    position: relative;
+  }
+  .testimonial-quote {
+    font-size: 17px;
+    font-style: italic;
+    color: var(--warm);
+    margin-bottom: 24px;
+    line-height: 1.7;
+  }
+  .testimonial-quote::before {
+    content: '"';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: var(--accent);
+    display: block;
+    line-height: 0.5;
+    margin-bottom: 12px;
+  }
+  .testimonial-author {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .testimonial-role {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+
+  /* CONTACT FORM SECTION */
+  #contact {
+    background: var(--cream);
+  }
+  #contact .section-label { color: var(--accent); }
+  .contact-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .contact-intro {
+    font-size: 20px;
+    color: var(--muted);
+    margin-bottom: 48px;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .form-group {
+    margin-bottom: 28px;
+  }
+  .form-label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    border: 1px solid var(--warm);
+    background: white;
+    color: var(--ink);
+    transition: border-color 0.2s;
+  }
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .form-textarea {
+    resize: vertical;
+    min-height: 180px;
+  }
+  .form-submit {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 18px 48px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .form-submit:hover { background: #a84225; }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 80px;
+    text-align: center;
+  }
+  footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 56px);
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+  footer p { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+  footer .mono { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--gold); letter-spacing: 0.1em; }
+  footer a { color: var(--gold); text-decoration: none; transition: color 0.2s; }
+  footer a:hover { color: var(--accent); }
+
+  /* UTILITY */
+  .annotation {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    background: var(--warm);
+    padding: 10px 16px;
+    margin-bottom: 24px;
+    display: inline-block;
+    border-left: 2px solid var(--accent);
+  }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-left::after { display: none; }
+    .hero-left, .hero-right { padding: 60px 32px; }
+    section { padding: 80px 32px; }
+    .samples-grid, .lp-features, .ads-grid, .product-grid, .testimonials-grid, .process-grid { grid-template-columns: 1fr; }
+    .piece { padding: 80px 32px; }
+    .lp-hero, .lp-testimonial { padding: 40px 32px; }
+    .email-body, .email-footer { padding: 32px; }
+    footer { padding: 60px 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-left">
+    <div class="badge">Copywriting Portfolio</div>
+    <h1 class="hero-name">
+      Ivy
+      <span>Words that move people.</span>
+    </h1>
+    <p class="hero-desc">
+      Conversion-focused copy for brands that believe great writing is the difference between being ignored and being chosen.
+    </p>
+    <nav class="hero-nav">
+      <a href="#p1"><span class="num">01</span> Landing Page</a>
+      <a href="#p2"><span class="num">02</span> Email Campaign</a>
+      <a href="#p3"><span class="num">03</span> Ad Copy Variants</a>
+      <a href="#p4"><span class="num">04</span> Product Description</a>
+      <a href="#p5"><span class="num">05</span> Blog / Article</a>
+      <a href="#p6"><span class="num">06</span> General Interest Article</a>
+      <a href="#p7"><span class="num">07</span> Marketing Copy</a>
+    </nav>
+  </div>
+  <div class="hero-right">
+    <div class="stat-block">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Content Formats</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Persuasion Frameworks</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Curiosity</div>
+    </div>
+    <div class="disciplines">
+      <span class="tag">Landing Pages</span>
+      <span class="tag">Email</span>
+      <span class="tag">Ads</span>
+      <span class="tag">Product Copy</span>
+      <span class="tag">Long-Form</span>
+      <span class="tag">Brand Voice</span>
+    </div>
+  </div>
+</header>
+
+<!-- SAMPLE INDEX -->
+<section id="samples">
+  <div class="section-label">Portfolio Samples</div>
+  <p class="samples-intro">Seven formats. Seven different voices. One goal — copy that converts.</p>
+  <div class="samples-grid">
+    <div class="sample-card">
+      <div class="card-type">01 · Landing Page</div>
+      <div class="card-title">Productivity App — Hero Section</div>
+      <p class="card-hook">Full above-the-fold copy with headline, subhead, CTA, social proof, and feature callouts.</p>
+      <a href="#p1" class="card-cta">View sample →</a>
+    </div>
+    <div class="sample-card">
+      <div class="card-type">02 · Email</div>
+      <div class="card-title">Abandoned Cart Recovery Email</div>
+      <p class="card-hook">A warm, story-driven re-engagement email built on curiosity and gentle urgency.</p>
+      <a href="#p2" class="card-cta">View sample →</a>
+    </div>
+    <div class="sample-card">
+      <div class="card-type">03 · Ad Copy</div>
+      <div class="card-title">3 Ad Variants — Skincare Brand</div>
+      <p class="card-hook">A/B-ready Facebook and Instagram ad copy in three distinct angles.</p>
+      <a href="#p3" class="card-cta">View sample →</a>
+    </div>
+    <div class="sample-card">
+      <div class="card-type">04 · Product Description</div>
+      <div class="card-title">Premium Coffee — E-commerce Listing</div>
+      <p class="card-hook">Sensory-rich product copy that sells a feeling, not just a feature.</p>
+      <a href="#p4" class="card-cta">View sample →</a>
+    </div>
+    <div class="sample-card">
+      <div class="card-type">05 · Blog / Article</div>
+      <div class="card-title">Wellness Brand Content Marketing</div>
+      <p class="card-hook">SEO-optimized article that builds trust and drives organic traffic.</p>
+      <a href="#p5" class="card-cta">View sample →</a>
+    </div>
+    <div class="sample-card">
+      <div class="card-type">06 · General Interest</div>
+      <div class="card-title">Why Most People Quit New Habits</div>
+      <p class="card-hook">Behavioral psychology meets actionable insight. Built for engagement and shareability.</p>
+      <a href="#p6" class="card-cta">View sample →</a>
+    </div>
+    <div class="sample-card">
+      <div class="card-type">07 · Marketing Copy</div>
+      <div class="card-title">Productivity App Launch</div>
+      <p class="card-hook">Punchy, benefit-focused copy for early-stage product introduction.</p>
+      <a href="#p7" class="card-cta">View sample →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PIECE 1: LANDING PAGE ==================== -->
+<div class="piece" id="p1">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">01 · Landing Page Hero Section</div>
+      <h2 class="piece-title">FocusFlow — Productivity App</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: SaaS / Productivity<br>
+      Format: Hero + Features + Testimonial<br>
+      Goal: Free Trial Sign-Up
+    </div>
+  </div>
+
+  <span class="annotation">▸ ABOVE THE FOLD — Hero Section</span>
+
+  <div class="lp-hero">
+    <div class="lp-hero-eyebrow">Trusted by 40,000+ professionals</div>
+    <h1 class="lp-hero-h1">Your best work happens when <em>everything else disappears.</em></h1>
+    <p class="lp-hero-sub">FocusFlow blocks the noise, structures your day, and quietly tracks where your time actually goes — so you stop feeling busy and start getting things done.</p>
+    <a href="#" class="lp-btn">Start Free — No Card Needed</a>
+    <p class="lp-proof">✦ 14-day free trial &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; 4.9★ on Product Hunt</p>
+  </div>
+
+  <span class="annotation">▸ FEATURE SECTION — Benefit-Led Headlines</span>
+
+  <div class="lp-features">
+    <div class="lp-feat">
+      <div class="lp-feat-icon">🎯</div>
+      <h3>One Priority. Every Day.</h3>
+      <p>Stop drowning in to-do lists. FocusFlow surfaces your single most important task every morning — and protects your time to finish it.</p>
+    </div>
+    <div class="lp-feat">
+      <div class="lp-feat-icon">🔕</div>
+      <h3>Deep Work, On Demand</h3>
+      <p>Activate Focus Mode and watch distractions vanish. Notifications pause. Websites block. Your brain finally gets the quiet it needs to think.</p>
+    </div>
+    <div class="lp-feat">
+      <div class="lp-feat-icon">📊</div>
+      <h3>Know Where Your Day Went</h3>
+      <p>At the end of every week, see exactly how you spent your hours — not to judge, but to get better. Small insights, lasting change.</p>
+    </div>
+  </div>
+
+  <span class="annotation">▸ SOCIAL PROOF — Testimonial Block</span>
+
+  <div class="lp-testimonial">
+    <p class="lp-quote">I used to end every day exhausted but unsatisfied. After three weeks with FocusFlow, I finish earlier and actually feel like I accomplished something real.</p>
+    <p class="lp-attr">— MARCUS T. · Senior Designer, Remote-First Team</p>
+  </div>
+</div>
+
+<!-- ==================== PIECE 2: EMAIL ==================== -->
+<div class="piece" id="p2">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">02 · Email Campaign</div>
+      <h2 class="piece-title">Abandoned Cart Recovery</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: E-commerce / Fashion<br>
+      Format: Story-Driven Recovery Email<br>
+      Goal: Complete Purchase
+    </div>
+  </div>
+
+  <span class="annotation">▸ FULL EMAIL — Subject: "Still thinking it over?"</span>
+
+  <div class="email-wrapper">
+    <div class="email-header">
+      <div class="email-logo">HAVEN&nbsp;&nbsp;CO.</div>
+    </div>
+    <div class="email-body">
+      <p class="email-greeting">Hey there,</p>
+      <h2 class="email-headline">You left something behind. We saved it for you.</h2>
+      <p class="email-p">We noticed you were browsing our <strong>Linen Weekend Shirt</strong> — and honestly? We think you've got good taste.</p>
+      <p class="email-p">Maybe life got in the way. Maybe you needed a moment to decide. That's completely fair. But we didn't want you to miss out, so we held onto your cart for 24 more hours.</p>
+      <div class="email-highlight">
+        "I wore mine three days in a row on vacation and got a compliment every single time." — Priya M., verified buyer.
+      </div>
+      <p class="email-p">This shirt is built from 100% European linen — the kind that actually gets better with every wash and somehow looks effortlessly put-together even when you're not trying.</p>
+      <p class="email-p">We only restock twice a year, and sizes are moving fast. Your cart expires at midnight tonight.</p>
+      <div class="email-btn-wrap">
+        <a href="#" class="email-btn">Complete My Order →</a>
+      </div>
+      <p class="email-ps">P.S. — Free shipping on orders over $75. You're almost there.</p>
+    </div>
+    <div class="email-footer">
+      HAVEN CO. · UNSUBSCRIBE · VIEW IN BROWSER · PRIVACY POLICY
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PIECE 3: AD COPY ==================== -->
+<div class="piece" id="p3">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">03 · Ad Copy Variants</div>
+      <h2 class="piece-title">Skincare Brand — 3 Angles</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: Beauty / Skincare<br>
+      Format: Facebook & Instagram Ads<br>
+      Goal: Product Page Click-Through
+    </div>
+  </div>
+
+  <span class="annotation">▸ 3 A/B TEST VARIANTS — Different psychological angles</span>
+
+  <div class="ads-grid">
+    <div class="ad-card">
+      <div class="ad-top">
+        <div class="ad-eyebrow">Variant A · Pain-Point Angle</div>
+        <div class="ad-headline">Your skin isn't difficult. Your routine is.</div>
+      </div>
+      <div class="ad-body">
+        <p>If you've tried everything and still wake up to redness, dryness, or breakouts — the problem isn't your skin type. It's the 12-step routine you're forcing it through.</p>
+        <p><strong>Lumine Daily Serum.</strong> One bottle. Three minutes. Clinically tested results in 21 days.</p>
+        <a href="#" class="ad-cta">See the Before & Afters →</a>
+      </div>
+    </div>
+    <div class="ad-card">
+      <div class="ad-top v2">
+        <div class="ad-eyebrow">Variant B · Desire Angle</div>
+        <div class="ad-headline">Skin so good, people will ask what you changed.</div>
+      </div>
+      <div class="ad-body">
+        <p>Not your diet. Not your sleep. Not your "glow." They'll just know something is different — and you'll know it's working.</p>
+        <p>Lumine Serum is formulated with cold-pressed Vitamin C and barrier-repairing ceramides. No fragrance. No filler. Just results.</p>
+        <a href="#" class="ad-cta">Try Risk-Free for 30 Days →</a>
+      </div>
+    </div>
+    <div class="ad-card" style="grid-column: 1 / -1;">
+      <div class="ad-top v3">
+        <div class="ad-eyebrow">Variant C · Credibility / Social Proof Angle</div>
+        <div class="ad-headline">14,000 five-star reviews. We'll let them do the talking.</div>
+      </div>
+      <div class="ad-body">
+        <p style="font-style:italic; font-size:16px;">"I've spent hundreds on serums over the years. Lumine made me feel like I wasted all of it." — @skinbysophia</p>
+        <p>Dermatologist-formulated. Fragrance-free. Made for sensitive skin that's been let down before.</p>
+        <a href="#" class="ad-cta">Read More Reviews →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PIECE 4: PRODUCT DESCRIPTION ==================== -->
+<div class="piece" id="p4">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">04 · Product Description</div>
+      <h2 class="piece-title">Premium Coffee — E-commerce Listing</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: Food & Beverage<br>
+      Format: Full Product Page Copy<br>
+      Goal: Add to Cart
+    </div>
+  </div>
+
+  <span class="annotation">▸ PRODUCT PAGE — Sensory-Led, Benefit-Focused</span>
+
+  <div class="product-grid">
+    <div class="product-img">☕</div>
+    <div class="product-content">
+      <div class="product-category">Single-Origin · Ethiopia · Light Roast</div>
+      <div class="product-name">Morning Ritual</div>
+      <div class="product-tagline">The cup that actually earns your morning.</div>
+      <p class="product-desc">
+        There's a moment — the one just before the first sip — where everything goes quiet. That's what we roast for.<br><br>
+        Morning Ritual is a light roast sourced from the Yirgacheffe region of Ethiopia, where coffee isn't a commodity. It's a ceremony. You'll taste blueberry on the front, a whisper of jasmine through the middle, and a clean, bright finish that doesn't need milk or sugar to be complete.
+      </p>
+      <ul class="product-bullets">
+        <li>Roasted to order — never sitting on a shelf for weeks</li>
+        <li>Whole bean or ground to your preferred brew method</li>
+        <li>Fair-trade certified, farm-direct sourcing</li>
+        <li>Nitrogen-flushed bag keeps freshness for 6 weeks</li>
+      </ul>
+      <div class="product-price">$22 <span style="font-size:16px; font-weight:400; color:var(--muted)">/ 250g</span></div>
+      <a href="#" class="product-btn">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PIECE 5: BLOG ==================== -->
+<div class="piece" id="p5">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">05 · Blog / Long-Form Article</div>
+      <h2 class="piece-title">Wellness Brand Content Marketing</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: Health & Wellness<br>
+      Format: SEO Blog Article (excerpt)<br>
+      Goal: Organic Traffic + Brand Trust
+    </div>
+  </div>
+
+  <span class="annotation">▸ ARTICLE EXCERPT — Intro + First Two Sections</span>
+
+  <div class="article-wrap">
+    <div class="article-tag">Wellness · Sleep · Habit Formation</div>
+    <h1 class="article-h1">Why You're Tired Even When You Sleep 8 Hours</h1>
+    <div class="article-byline">By Ivy &nbsp;·&nbsp; 6 min read &nbsp;·&nbsp; [Sample Article — For Portfolio]</div>
+    <p class="article-lede">Most of us are chasing the wrong number. Here's what your sleep tracker isn't telling you — and the small shift that changes everything.</p>
+    <div class="article-body">
+      <p>Eight hours. That's the golden number we've been sold since childhood. Get your eight hours and everything else — focus, mood, energy — falls into place. And yet millions of people hit that target every night and still wake up feeling like they lost a fight.</p>
+      <p>If that sounds familiar, you're not broken. You're just measuring the wrong thing.</p>
+      <h2>Hours In Bed ≠ Hours Recovered</h2>
+      <p>Sleep science has long distinguished between time asleep and <em>quality</em> of sleep. What your body actually needs — and what most wearables struggle to accurately measure — is deep sleep: the slow-wave stages where your brain clears waste, your muscles repair, and your immune system does its real work.</p>
+      <p>You can spend 8 hours in bed cycling through light sleep and brief awakenings and wake up feeling worse than someone who slept six solid, deep hours.</p>
+      <div class="article-pullquote">
+        "The goal isn't more sleep. It's less resistance to the sleep you already have."
+      </div>
+      <h2>The Overlooked Culprits</h2>
+      <p>Temperature is one of the most underrated factors in sleep quality. Your body needs to drop roughly 2–3 degrees Fahrenheit to enter deep sleep stages — which is why a warm room, a heavy duvet, or late-night exercise can quietly sabotage hours of "sleep" without you ever knowing it.</p>
+      <p>Stress hormones are another silent disruptor. Elevated cortisol — even the low-grade chronic kind — prevents your body from shifting into parasympathetic mode, which is the physiological state that makes deep recovery possible. You can be exhausted and wired at the same time. In fact, that's exactly what chronic stress feels like.</p>
+      <p style="font-family:'DM Mono',monospace; font-size:13px; color:var(--muted); border-top: 1px solid var(--warm); padding-top: 24px; margin-top: 12px;">[ Article continues... This is an excerpt for portfolio purposes. Full articles available on request. ]</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PIECE 6: GENERAL INTEREST ARTICLE ==================== -->
+<div class="piece" id="p6">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">06 · General Interest Article</div>
+      <h2 class="piece-title">Why Most People Quit New Habits</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: Personal Development<br>
+      Format: Behavioral Psychology Article<br>
+      Goal: Engagement + Shareability
+    </div>
+  </div>
+
+  <span class="annotation">▸ ARTICLE — Research-Backed, Actionable Insight</span>
+
+  <div class="article-wrap">
+    <div class="article-tag">Behavior · Psychology · Habit Formation</div>
+    <h1 class="article-h1">Why Most People Quit New Habits (And What Actually Works)</h1>
+    <div class="article-byline">By Ivy &nbsp;·&nbsp; 5 min read &nbsp;·&nbsp; [Sample — For Portfolio]</div>
+    <p class="article-lede">The problem isn't willpower. It's friction. And there's a simple shift that changes everything.</p>
+    <div class="article-body">
+      <p>You've done this before. You decide to wake up earlier, drink more water, finally start running — and for a few days, maybe even a week, you actually do it. Then something happens. You sleep through one alarm, miss one morning, and somehow that's it. The habit is gone before it ever really started.</p>
+      <p>The problem isn't willpower. Research in behavioural psychology has consistently shown that willpower is a limited resource — it depletes throughout the day, which is why midnight snacking is so much easier to justify than skipping breakfast. What actually determines whether a habit sticks is far less dramatic: it's friction.</p>
+      <h2>Friction Is Everything</h2>
+      <p>Habits that survive are the ones that are easy to start, not just easy to want. Laying your gym clothes out the night before doesn't sound revolutionary, but it removes the small moment of resistance that, at 6am, feels enormous. Habit researchers call this "reducing the activation energy" — and it turns out the gap between intending to do something and actually doing it is almost always physical, not motivational.</p>
+      <div class="article-pullquote">
+        "Every decision point is an exit ramp. Make it harder to exit."
+      </div>
+      <p>Think about the behaviors you do automatically: brushing your teeth, checking email, scrolling social media. They're automatic because they're frictionless. You don't think about them. You just do them. That's the state you want to engineer for new habits.</p>
+      <h2>The Three-Layer System</h2>
+      <p><strong>Layer 1: Remove the barrier to starting.</strong> Put your running shoes by the door. Keep water bottles on your desk. Schedule the task in your calendar as a non-negotiable appointment. The goal isn't motivation — it's proximity.</p>
+      <p><strong>Layer 2: Stack it onto an existing habit.</strong> Want to meditate? Do it right after coffee. Want to stretch? Do it right before your shower. You're hijacking an existing neural pathway instead of creating a brand new one from scratch.</p>
+      <p><strong>Layer 3: Make it smaller than you think you need.</strong> Two minutes of running. Three minutes of meditation. Five push-ups. The habit researchers call this "minimum viable consistency." You're not trying to build the empire in day one. You're trying to show up.</p>
+      <p>So before you overhaul your routine, ask a simpler question: what's making this harder than it needs to be?</p>
+      <p style="font-family:'DM Mono',monospace; font-size:13px; color:var(--muted); border-top: 1px solid var(--warm); padding-top: 24px; margin-top: 12px;">[ Article continues... ]</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PIECE 7: MARKETING COPY ==================== -->
+<div class="piece" id="p7">
+  <div class="piece-header">
+    <div>
+      <div class="piece-type">07 · Marketing Copy</div>
+      <h2 class="piece-title">Productivity App Launch Copy</h2>
+    </div>
+    <div class="piece-meta">
+      Industry: SaaS / Productivity<br>
+      Format: Short-Form Marketing Copy<br>
+      Goal: Product Awareness + Interest
+    </div>
+  </div>
+
+  <span class="annotation">▸ SHORT-FORM MARKETING — Punchy, Benefit-Focused</span>
+
+  <div class="article-wrap" style="max-width: 800px;">
+    <div class="article-body" style="font-size: 20px; line-height: 1.9;">
+      <h2 style="font-size: 36px; margin-bottom: 32px;">Your to-do list isn't the problem. The problem is the seventeen different places you're keeping it.</h2>
+      <p>Sticky notes on your monitor. A notes app you haven't opened since February. The back of a receipt you're hoping you haven't lost.</p>
+      <p>Sound familiar?</p>
+      <h2 style="margin-top: 48px;">Flo brings everything into one place.</h2>
+      <p>Tasks, deadlines, and daily priorities — so you can spend less time organizing and more time actually doing.</p>
+      <p>It's built for people who want to feel on top of things without spending an hour each morning figuring out how.</p>
+      <div class="article-pullquote" style="margin-top: 48px; font-size: 24px;">
+        Simple to set up. Satisfying to use. Free to try.
+      </div>
+      <p style="text-align: center; margin-top: 48px;"><a href="#" style="display: inline-block; background: var(--accent); color: white; padding: 18px 48px; text-decoration: none; font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;">Start Free →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PROCESS SECTION ==================== -->
+<section id="process">
+  <div class="section-label">My Process</div>
+  <p style="font-size: 18px; color: var(--muted); margin-bottom: 80px; max-width: 700px;">Every piece of copy I write follows a clear strategic framework. From research to deployment, here's how I ensure your words work as hard as your product does.</p>
+  
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="process-num">01</div>
+      <div class="process-label">Research</div>
+      <div class="process-desc">Deep dive into your audience, competitors, and market. What are they reading? What are they worried about? What language do they use?</div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">02</div>
+      <div class="process-label">Strategy</div>
+      <div class="process-desc">Define the core message and psychological angle. What's the one thing that matters most? What's the one thing they need to feel?</div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">03</div>
+      <div class="process-label">Hook</div>
+      <div class="process-desc">Write an opening that stops the scroll. Address a problem, ask a question, or make an unexpected promise. Your first sentence is everything.</div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">04</div>
+      <div class="process-label">Benefit</div>
+      <div class="process-desc">Move from the problem to the solution — not features, but outcomes. What actually changes for them? How do they feel?</div>
+    </div>
+    <div class="process-step">
+      <div class="process-num">05</div>
+      <div class="process-label">CTA</div>
+      <div class="process-desc">End with a clear, compelling call to action. Make the next step obvious. Remove friction. Make it easy to say yes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS SECTION ==================== -->
+<section id="testimonials">
+  <div class="section-label">Client Results</div>
+  <p style="font-size: 18px; color: var(--warm); margin-bottom: 80px; max-width: 700px;">Don't just take my word for it. Here's what happens when brands invest in copy that actually works.</p>
+  
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-quote">The email sequence Ivy wrote increased our click-through rate by 34% and our conversion rate by 22%. We've reused her framework*
